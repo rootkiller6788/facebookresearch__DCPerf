@@ -145,7 +145,7 @@ main() {
     elif [ "$name" != "none" ]; then
         run_list=$name
         if [ "$name" = "small_locks_benchmark" ] || [ "$name" = "iobuf_benchmark" ]; then
-                "./${name}" --bm_min_iters=1000000 > "out_${benchmark}".txt
+                "./${name}" --bm_min_iters=1000000 > "out_${name}".txt
             else
                 "./${name}"  > "out_${name}".txt
         fi
